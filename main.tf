@@ -16,7 +16,7 @@ resource "aws_instance" "lab"{
 
 terraform {
   backend "s3" {
-    bucket = "lab-terraform-state"
+    bucket = "condormatics-s25-tfstate-dp"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
